@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrados Cambia Color</title>
+    <style>
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            display: inline-block;
+            cursor: pointer;
+        
+            border: 0px solid black           
+}
+
+#cuadrado1 { background-color: red; }
+#cuadrado2 { background-color: green; }
+#cuadrado3 { background-color: blue; }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cuadrado" id="cuadrado1"></div>
+    <div class="cuadrado" id="cuadrado2"></div>
+    <div class="cuadrado" id="cuadrado3"></div>
+
+    <script>
+        const cuadrados = document.querySelectorAll(".cuadrado");
+
+        cuadrados[0].addEventListener("click", function() {
+            document.body.style.backgroundColor = "red";
+        });
+
+        cuadrados[1].addEventListener("click", function() {
+            document.body.style.backgroundColor = "green";
+        });
+
+        cuadrados[2].addEventListener("click", function() {
+            document.body.style.backgroundColor = "blue";
+        });
+    </script>
+</body>
+</html>
